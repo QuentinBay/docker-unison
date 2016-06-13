@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # All variables defined in config.sh
-config.sh
+source config.sh
 
 docker stop ${CONTAINER_NAME}
 docker rm ${CONTAINER_NAME}
