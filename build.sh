@@ -1,6 +1,5 @@
 #!/bin/bash
-
-# All variables defined in config.sh
-source config.sh
+pwd=$(pwd)
+source ${pwd}/conf/config.sh
 
 docker build -t ${IMAGE_NAME} .

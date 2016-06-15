@@ -1,7 +1,6 @@
 #!/bin/bash
-
-# All variables defined in config.sh
-source config.sh
+pwd=$(pwd)
+source ${pwd}/conf/config.sh
 
 docker stop ${CONTAINER_NAME}
 docker rm ${CONTAINER_NAME}
